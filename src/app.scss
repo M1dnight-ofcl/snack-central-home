@@ -1,0 +1,32 @@
+$bg1:#191919;
+$bg2:#232323;
+$bg3:#0e0e0e;
+$txt1:#f3f3f3;
+$txt2:#d7d7d7;
+$active:#e580e5;
+$active2:#8dfdf4;
+$outline: 1px solid #6a6a6a;
+
+#pageheader {
+  height: 75vmin;
+  width: 100dvw;
+  background:$bg1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  #logo {
+    background-image:url('/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 75%;
+    width:100%;
+    object-fit:contain;
+    background-position: center;
+  }
+}
+.sect_style1 {
+  height: 50dvh;
+  width: 100dvw;
+  background:$bg2;
+}
