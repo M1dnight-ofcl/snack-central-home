@@ -1,6 +1,30 @@
+$bg1:#191919;
+$bg2:#232323;
+$bg3:#0e0e0e;
+$txt1:#f3f3f3;
+$txt2:#d7d7d7;
+
+$active:#e580e5;
+$active2:#8dfdf4;
+$active_outline: 1px solid #b761b7;
+$active_outline2: 1px solid #62cac2;
+
+$outline: 1px solid #4a4a4a;
+$g-pad: 5vmin;
+$g-trans: .35s;
+$g-bordrad: 1.5vmin ;
+$g-glow: drop-shadow(0 0 1vmin #ffffff75);
+
+@import url('https://fonts.cdnfonts.com/css/rogan');
+
 html *{
   margin:0;
   padding:0;
   position:relative;
   box-sizing:border-box;
+  word-wrap: break-word;
+  text-wrap: wrap;
+  font-family: "Rogan", sans-serif;
+  font-weight: 400;
+  color: $txt1;
 }

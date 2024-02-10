@@ -1,32 +1,93 @@
-$bg1:#191919;
-$bg2:#232323;
-$bg3:#0e0e0e;
-$txt1:#f3f3f3;
-$txt2:#d7d7d7;
-$active:#e580e5;
-$active2:#8dfdf4;
-$outline: 1px solid #6a6a6a;
+@import "index";
+@mixin alignToSide {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  padding: $g-pad;
+}
+.button_style1 {
+  padding: 1vmin 3.5vmin;
+  margin-right: 1vmin;
+  font-size: 2vmin;
+  border-radius: $g-bordrad;
+  border: $outline;
+  background: $bg2;
+  color: $txt2;
+  cursor: pointer;
+  transition: $g-trans;
+  &:hover {
+    transform: translateY(-.5vmin);
+    background: $active;
+    border: $active_outline;
+    color: $bg3;
+    filter: $g-glow;
+  }
+}
 
 #pageheader {
-  height: 75vmin;
+  height: 65vmin;
   width: 100dvw;
-  background:$bg1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  #logo {
-    background-image:url('/logo.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 75%;
-    width:100%;
-    object-fit:contain;
-    background-position: center;
+  z-index:5;
+  background: url("/gum_bg1.png") no-repeat center center;
+  box-shadow: inset 0 0 0 1000px rgba(5,5,5,.75);
+  *{
+    z-index: 6;
   }
+  #ph_hwrapper {
+    width: 100vmin;
+    height: 100%;
+    #ph_mockup {
+      background-image: url('/gum_mockup.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      object-fit: contain;
+      filter: $g-glow;
+    }
+    // background: #8dfdf4;
+    .left{
+      @include alignToSide;
+      left: 0;
+      h1 {
+        font-size: 6.35vmin;
+        padding-bottom: 3.5vmin;
+      }
+      p {
+        font-size: 2.75vmin;
+        font-weight: 200;
+        color: $txt2;
+        margin-bottom: 2vmin;
+      }
+      #ph_buttonWrapper {
+        width: 100%;
+        padding-top: 2vmin;
+        border-top: 1px solid #bcbcbc;
+      }
+    }
+    .right{
+      @include alignToSide;
+      right: 0;
+    }
+  }
+}
+.sect_h1 {
+
 }
 .sect_style1 {
   height: 50dvh;
   width: 100dvw;
   background:$bg2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sect_contentWrapper {
+    width: 100vmin;
+    height: 100%;
+    // background: $bg2;
+    padding: $g-pad;
+  }
 }
