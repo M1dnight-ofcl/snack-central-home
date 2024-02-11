@@ -1,4 +1,54 @@
 @import url("https://fonts.cdnfonts.com/css/rogan");
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 5vmin;
+  width: 100dvw;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  text-decoration: none !important;
+  background: #191919;
+  z-index: 99;
+}
+nav .navlink {
+  text-decoration: none !important;
+  height: 100%;
+  width: 20vmin;
+  background: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  font-weight: 100;
+}
+nav .navlink:hover {
+  background: #e580e5;
+  color: #0e0e0e;
+}
+nav .active {
+  text-decoration: none !important;
+  background: #272727;
+  padding-top: 0.65vmin;
+  border-bottom: 0.65vmin #e580e5 solid;
+  font-weight: 400;
+}
+nav #logo {
+  background-image: url("/logo-strait.png");
+  position: absolute;
+  top: 0;
+  left: -1vmin;
+  height: 100%;
+  width: 20vmin;
+  cursor: pointer;
+  object-fit: contain;
+  background-size: contain;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
 html * {
   margin: 0;
   padding: 0;
@@ -9,4 +59,10 @@ html * {
   font-family: "Rogan", sans-serif;
   font-weight: 400;
   color: #f3f3f3;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+html * body {
+  background: #191919;
 }/*# sourceMappingURL=index.css.map */

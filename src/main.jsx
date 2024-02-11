@@ -1,4 +1,21 @@
 import { render } from 'preact'
 import App from './app.jsx'
+import Router from 'preact-router';
+import { Link } from 'preact-router/match';
+import { h } from 'preact';
 import './style/index.css'
-render(<App />, document.getElementById('app'))
+
+const Home=()=>{
+    return(<>
+    <nav>
+        <div id="logo"></div>
+        <Link className="navlink" activeClassName="active" href="/">Home</Link>
+        <Link className="navlink" activeClassName="active" href="/contactus">Home</Link>
+    </nav>
+    <Router>
+        <App path="/" />
+    </Router>
+    </>)
+}
+
+render(<Home/>,document.getElementById('app'))

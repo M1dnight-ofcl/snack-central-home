@@ -5,9 +5,11 @@
   width: 50%;
   top: 0;
   padding: $g-pad;
+  display: flex;
 }
+
 .button_style1 {
-  padding: 1vmin 3.5vmin;
+  padding: 1.5vmin 4vmin;
   margin-right: 1vmin;
   font-size: 2vmin;
   border-radius: $g-bordrad;
@@ -34,6 +36,8 @@
   flex-direction: column;
   z-index:5;
   background: url("/gum_bg1.png") no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(5,5,5,.75);
   *{
     z-index: 6;
@@ -45,16 +49,19 @@
       background-image: url('/gum_mockup.png');
       background-repeat: no-repeat;
       background-position: center;
+      background-size: contain;
       object-fit: contain;
+      height: 100%;
+      width: 100%;
       filter: $g-glow;
     }
     // background: #8dfdf4;
-    .left{
+    .ph_left{
       @include alignToSide;
       left: 0;
       h1 {
         font-size: 6.35vmin;
-        padding-bottom: 3.5vmin;
+        padding-bottom: 1.5vmin;
       }
       p {
         font-size: 2.75vmin;
@@ -68,17 +75,24 @@
         border-top: 1px solid #bcbcbc;
       }
     }
-    .right{
+    .ph_right{
       @include alignToSide;
+      padding: 5vmin;
       right: 0;
     }
   }
 }
 .sect_h1 {
-
+  font-size: 5vmin;
+  margin-bottom: 1vmin;
+}
+.sect_p {
+  font-size: 2.75vmin;
+  font-weight: 100;
+  // margin-bottom: 1vmin;
 }
 .sect_style1 {
-  height: 50dvh;
+  height: 50vmin;
   width: 100dvw;
   background:$bg2;
   display: flex;
@@ -90,4 +104,25 @@
     // background: $bg2;
     padding: $g-pad;
   }
+}
+.left { @include alignToSide; left: 0; }
+.right { @include alignToSide; right: 0; }
+#sect1_left {
+  h1{font-size: 6.35vmin !important;}
+  padding: 2vmin !important;
+  padding-right: 1vmin !important;
+}
+#sect1_right {
+  h1{font-size: 6.35vmin !important;}
+  padding: 2vmin !important;
+  padding-left: 1vmin !important;
+}
+.sect1_contentbox {
+  height: 100%;
+  width: 100%;
+  padding: 3.25vmin !important;
+  border-radius: $g-bordrad;
+  border: $outline;
+  padding: $g-pad;
+  background: $bg4;
 }

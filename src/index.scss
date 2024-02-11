@@ -1,6 +1,7 @@
 $bg1:#191919;
 $bg2:#232323;
 $bg3:#0e0e0e;
+$bg4:#272727;
 $txt1:#f3f3f3;
 $txt2:#d7d7d7;
 
@@ -13,9 +14,59 @@ $outline: 1px solid #4a4a4a;
 $g-pad: 5vmin;
 $g-trans: .35s;
 $g-bordrad: 1.5vmin ;
-$g-glow: drop-shadow(0 0 1vmin #ffffff75);
+$g-glow: drop-shadow(0,0,1vmin,#ffffff75);
 
 @import url('https://fonts.cdnfonts.com/css/rogan');
+
+nav{
+  position: fixed !important;
+  top:0;
+  left:0;
+  height: 5vmin;
+  width: 100dvw;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  text-decoration: none !important;
+  background: $bg1;
+  z-index: 99;
+  .navlink {
+    text-decoration: none !important;
+    height: 100%;
+    width: 20vmin;
+    background: $bg2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $g-trans;
+    font-weight: 100;
+  }
+  .navlink:hover {
+    background: $active;
+    color: $bg3;
+  }
+  .active {
+    text-decoration: none !important;
+    background: $bg4;
+    padding-top: .65vmin;
+    border-bottom: .65vmin $active solid;
+    font-weight: 400;
+  }
+  #logo {
+    background-image: url('/logo-strait.png');
+    position: absolute;
+    top:0;
+    left: -1vmin;
+    height: 100%;
+    width: 20vmin;
+    cursor: pointer;
+    object-fit: contain;
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+}
 
 html *{
   margin:0;
@@ -27,4 +78,8 @@ html *{
   font-family: "Rogan", sans-serif;
   font-weight: 400;
   color: $txt1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  body { background:$bg1; }
 }
