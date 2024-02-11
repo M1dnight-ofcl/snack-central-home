@@ -66,6 +66,8 @@ html * {
 }
 html * body {
   background: #191919;
+  height: 100%;
+  width: 100%;
 }
 
 .button_style1 {

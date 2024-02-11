@@ -2,8 +2,10 @@ $bg1:#191919;
 $bg2:#232323;
 $bg3:#0e0e0e;
 $bg4:#272727;
+$bg5:#2e2e2e;
 $txt1:#f3f3f3;
 $txt2:#d7d7d7;
+$txt3:#c2c2c2;
 
 $active:#e580e5;
 $active2:#8dfdf4;
@@ -82,5 +84,6 @@ html *{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  &::selection{background: $active; color: $bg3;}
   body { background:$bg1; height: 100%; width: 100%; }
 }
