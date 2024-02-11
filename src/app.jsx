@@ -19,8 +19,8 @@ const App = () => {
               gum so everyone can enjoy it for a reasonable price.
             </p>
             <div id="ph_buttonWrapper">
-              <button className='button_style1'>Check Us Out</button>
-              <button className='button_style1'>Contact Us</button>
+              <a href="#"><button className='button_style1'>Check Us Out</button></a>
+              <a href="/contactus"><button className='button_style1'>Contact Us</button></a>
             </div>
           </div>
           <div className="ph_right">
@@ -46,7 +46,7 @@ const App = () => {
               <h1 className="sect_h1">Why Us?</h1>
               <p className='sect_p'>
                 Our prices are super cheap. We have 25%, sometimes 50% markdowns on our 
-                prices compared to big retail stores like walgreens, target, and walamart.
+                prices compared to big retail stores like walgreens, target, and walmart.
                 We always have your favorite gums in stock, and we add any gum we don't have.
               </p>
             </div>

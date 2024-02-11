@@ -82,5 +82,5 @@ html *{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  body { background:$bg1; }
+  body { background:$bg1; height: 100%; width: 100%; }
 }

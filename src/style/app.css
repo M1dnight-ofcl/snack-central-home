@@ -88,7 +88,7 @@ html * body {
 }
 
 #pageheader {
-  height: 65vmin;
+  height: 70vmin;
   width: 100dvw;
   display: flex;
   align-items: center;
@@ -105,7 +105,7 @@ html * body {
 }
 #pageheader #ph_hwrapper {
   width: 100vmin;
-  height: 100%;
+  height: calc(100% - 5vmin);
 }
 #pageheader #ph_hwrapper #ph_mockup {
   background-image: url("/gum_mockup.png");
@@ -125,6 +125,7 @@ html * body {
   padding: 5vmin;
   display: flex;
   left: 0;
+  top: 5vmin !important;
 }
 #pageheader #ph_hwrapper .ph_left h1 {
   font-size: 6.35vmin;
@@ -149,6 +150,7 @@ html * body {
   padding: 5vmin;
   display: flex;
   padding: 5vmin;
+  top: 5vmin !important;
   right: 0;
 }
 
