@@ -10,7 +10,7 @@ const Home=()=>{
     <nav>
         <div id="logo"></div>
         <Link className="navlink" activeClassName="active" href="/">Home</Link>
-        <Link className="navlink" activeClassName="active" href="/contactus">Home</Link>
+        {/* <Link className="navlink" activeClassName="active" href="/contactus">Contact Us</Link> */}
     </nav>
     <Router>
         <App path="/" />
