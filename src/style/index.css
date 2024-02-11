@@ -23,6 +23,7 @@ nav .navlink {
   justify-content: center;
   transition: 0.35s;
   font-weight: 100;
+  font-size: 2vmin;
 }
 nav .navlink:hover {
   background: #e580e5;

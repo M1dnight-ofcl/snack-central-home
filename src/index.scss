@@ -41,6 +41,7 @@ nav{
     justify-content: center;
     transition: $g-trans;
     font-weight: 100;
+    font-size: 2vmin;
   }
   .navlink:hover {
     background: $active;
