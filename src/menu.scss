@@ -1,0 +1,45 @@
+@import "index";
+#m_header {
+    height: 35vmin;
+    width: 100dvw;
+    background: $bg4;
+    padding: $g-pad;
+    padding-top: 10vmin !important;
+    display: flex;
+    h1{ font-size: 10vmin; }
+}
+#m_itemlist {
+    padding: 5vmin;
+    background: $bg1;
+    display: flex;
+    #m_il_contentWrapper { width: 100vmin; }
+    .m_item {
+        height: 25vmin;
+        width: 100%;
+        background: $bg2;
+        border: $outline;
+        border-radius: $g-bordrad;
+        margin-bottom: 2.5vmin;
+        .leftWrapper {
+            position: absolute;
+            top: 2.5vmin;
+            left: 2.5vmin;
+            // background: #fff;
+            height: calc(100% - 5vmin);
+            width: 50vmin;
+            h1 { font-size: 5vmin; margin-bottom: 1vmin; }
+            p { font-size: 2.35vmin; margin-bottom: 1.5vmin; font-weight: 100; }
+            h2 { font-size: 3.5vmin;}
+        }
+        .image{
+            height: calc(100% - 5vmin);
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: 2.5vmin;
+            right: 2.5vmin;
+            background-size: contain;
+            object-fit: contain;
+            background-position: center;
+        }
+    }
+}

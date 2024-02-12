@@ -37,7 +37,7 @@ const App = () => {
                 Nowadays, it's hard to get gum as a kid. You can bike to a store
                 or get some with your parents. This can be hard sometimes, and we
                 all know your struggle. We aim to fix that. Out candy is super cheap,
-                and available to everyone at West Essex Middle School
+                and available to everyone at West Essex Middle School.
               </p>
             </div>
           </div>
@@ -46,7 +46,7 @@ const App = () => {
               <h1 className="sect_h1">Why Us?</h1>
               <p className='sect_p'>
                 Our prices are super cheap. We have 25%, sometimes 50% markdowns on our 
-                prices compared to big retail stores like walgreens, target, and walmart.
+                prices compared to big retail stores like Walgreens, Target, and Walmart.
                 We always have your favorite gums in stock, and we add any gum we don't have.
               </p>
             </div>

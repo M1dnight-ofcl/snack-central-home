@@ -64,6 +64,10 @@ html * {
   justify-content: center;
   flex-direction: column;
 }
+html *::selection {
+  background: #e580e5;
+  color: #0e0e0e;
+}
 html * body {
   background: #191919;
   height: 100%;

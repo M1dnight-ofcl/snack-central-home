@@ -18,9 +18,9 @@ const Home=()=>{
         <Link className="navlink" activeClassName="active" href="/menu">Menu</Link>
     </nav>
     <Router>
-        <App path="/" />
-        <ContactUs path="/contactus" />
-        <Menu path="/menu" />
+        <App path="/"/>
+        <ContactUs path="/contactus"/>
+        <Menu path="/menu"/>
     </Router>
     </>)
 }
