@@ -3,8 +3,6 @@ import { useState, useEffect } from 'preact/hooks';
 // import Aos from "aos";
 import './style/app.css';
 const App = () => {
-  const [status, setPageStatus] = useState("Home");
-  useEffect(()=>{ document.title=`Snack Central - ${status}`; });
   // useEffect(()=>{ Aos.init() },[])
   return (<>
     <header id='pageheader'>

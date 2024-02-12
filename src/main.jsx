@@ -10,12 +10,14 @@ import { h } from 'preact';
 import './style/index.css';
 
 const Home=()=>{
+    const [status, setPageStatus] = useState("Home");
+    useEffect(()=>{ document.title=`Snack Central - ${status}`; });
     return(<>
     <nav>
         <div id="logo"></div>
-        <Link className="navlink" activeClassName="active" href="/">Home</Link>
-        <Link className="navlink" activeClassName="active" href="/contactus">Contact Us</Link>
-        <Link className="navlink" activeClassName="active" href="/menu">Menu</Link>
+        <Link onClick={()=>{setPageStatus('Home')}} className="navlink" activeClassName="active" href="/">Home</Link>
+        <Link onClick={()=>{setPageStatus('Contact Us')}} className="navlink" activeClassName="active" href="/contactus">Contact Us</Link>
+        <Link onClick={()=>{setPageStatus('Menu')}} className="navlink" activeClassName="active" href="/menu">Menu</Link>
     </nav>
     <Router>
         <App path="/" />
