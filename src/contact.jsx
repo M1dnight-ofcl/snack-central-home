@@ -1,18 +1,17 @@
-import { useState, useEffect } from 'preact/hooks'
-import "./style/contact.css"
-
+import { useState, useEffect } from 'preact/hooks';
+import "./style/contact.css";
 const ContactUs=()=>{
     let allInputs=[];
     const Input=(prop)=>{
-        allInputs.push(prop.id)
+        allInputs.push(prop.id);
         return(<>
             <label for={prop.id}>{prop.title}</label><br/>
             <input name={prop.id} id={prop.id} type="text" />
-        </>)
+        </>);
     }
     const Click=(e)=>{
         e.preventDefault();
-        alert('Coming Soon! (sorry)')
+        alert('Coming Soon! (sorry)');
     }
     return(<>
         <div id="c_header">
@@ -28,6 +27,6 @@ const ContactUs=()=>{
                 </div>
             </div>
         </section>
-    </>)
+    </>);
 }
 export default ContactUs;
