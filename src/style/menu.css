@@ -1,4 +1,7 @@
-@import url("https://fonts.cdnfonts.com/css/rogan");
+@font-face {
+  font-family: main;
+  src: url("/font.otf");
+}
 nav {
   position: fixed !important;
   top: 0;
@@ -57,7 +60,7 @@ html * {
   box-sizing: border-box;
   word-wrap: break-word;
   text-wrap: wrap;
-  font-family: "Rogan", sans-serif;
+  font-family: main;
   font-weight: 400;
   color: #f3f3f3;
   align-items: center;
