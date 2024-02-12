@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'preact/hooks'
 import "./style/contact.css"
-
 const ContactUs=()=>{
     let allInputs=[];
     const Input=(prop)=>{
