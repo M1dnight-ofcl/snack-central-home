@@ -1,4 +1,5 @@
 import { render } from 'preact';
+import { useState, useEffect } from 'preact/hooks';
 // Pages ----------------
 import App from './app.jsx';
 import ContactUs from './contact.jsx';
