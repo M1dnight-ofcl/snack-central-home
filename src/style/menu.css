@@ -89,6 +89,15 @@ html * body {
   font-size: 10vmin;
 }
 
+.m_hr {
+  margin: 2vmin 0;
+  border: 1px solid #4a4a4a;
+}
+
+.m_h1 {
+  font-size: 6vmin;
+}
+
 #m_itemlist {
   padding: 5vmin;
   background: #191919;
@@ -113,16 +122,19 @@ html * body {
   width: 50vmin;
 }
 #m_itemlist .m_item .leftWrapper h1 {
-  font-size: 5vmin;
+  font-size: 4.5vmin;
   margin-bottom: 1vmin;
 }
 #m_itemlist .m_item .leftWrapper p {
-  font-size: 2.35vmin;
+  font-size: 2vmin;
   margin-bottom: 1.5vmin;
   font-weight: 100;
 }
 #m_itemlist .m_item .leftWrapper h2 {
-  font-size: 3.5vmin;
+  font-size: 3vmin;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 #m_itemlist .m_item .image {
   height: calc(100% - 5vmin);

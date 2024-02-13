@@ -8,6 +8,8 @@
     display: flex;
     h1{ font-size: 10vmin; }
 }
+.m_hr{ margin: 2vmin 0; border: $outline; }
+.m_h1{ font-size: 6vmin; }
 #m_itemlist {
     padding: 5vmin;
     background: $bg1;
@@ -27,9 +29,9 @@
             // background: #fff;
             height: calc(100% - 5vmin);
             width: 50vmin;
-            h1 { font-size: 5vmin; margin-bottom: 1vmin; }
-            p { font-size: 2.35vmin; margin-bottom: 1.5vmin; font-weight: 100; }
-            h2 { font-size: 3.5vmin;}
+            h1 { font-size: 4.5vmin; margin-bottom: 1vmin; }
+            p { font-size: 2vmin; margin-bottom: 1.5vmin; font-weight: 100; }
+            h2 { font-size: 3vmin; position: absolute; bottom: 0; left: 0; }
         }
         .image{
             height: calc(100% - 5vmin);

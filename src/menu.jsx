@@ -20,6 +20,9 @@ const Menu=()=>{
         </div>
         <div id="m_itemlist">
             <div id="m_il_contentWrapper">
+                {/* ------------------------------------------------------------------- */}
+                <h1 className='m_h1'>Trident Gum</h1>
+                <hr className='m_hr'/>
                 <Item 
                     id="td_bbg" 
                     name="Trident Bubblegum"
@@ -32,6 +35,25 @@ const Menu=()=>{
                     desc="A tasty alternative to those who want a classic brand, tropical
                     orange may be the best falvor there is in Trident's line-up." 
                     price="$1.50" />
+                {/* ------------------------------------------------------------------- */}
+                <h1 className='m_h1'>Orbit Gum</h1>
+                <hr className='m_hr'/>
+                <Item 
+                    id="ob_spmt" 
+                    name="Orbit Spearmint"
+                    desc="A sharp minty flavor for ultimate refreshment. This is a pretty
+                    reasonable flavor of gum."
+                    price="$1.50" />
+                {/* ------------------------------------------------------------------- */}
+                <h1 className='m_h1'>Tic Tacs</h1>
+                <hr className='m_hr'/>
+                <Item 
+                    id="tt_fruit" 
+                    name="Tic Tacs Fruit"
+                    desc="A sweet, tasty breath mint. It's small size and big quantity is
+                    great for a mid-class snack."
+                    price="$1.50" />
+                {/* ------------------------------------------------------------------- */}
             </div>
         </div>
     </>)
