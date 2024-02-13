@@ -130,11 +130,14 @@ html * body {
   width: 100%;
   align-items: flex-start !important;
 }
-.form label {
+.form .c_form {
+  width: 100%;
+}
+.form .c_form label {
   font-size: 2.75vmin;
   color: #d7d7d7;
 }
-.form input[type=text] {
+.form .c_form input[type=text] {
   width: 100%;
   padding: 1.5vmin;
   color: #c2c2c2;
@@ -145,10 +148,10 @@ html * body {
   transition: 0.35s;
   margin-bottom: 2.5vmin;
 }
-.form input[type=text]:hover {
+.form .c_form input[type=text]:hover {
   transform: translateY(-0.5vmin);
 }
-.form input[type=text]:focus {
+.form .c_form input[type=text]:focus {
   outline: none;
   background: #f3f3f3;
   color: #191919;

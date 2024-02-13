@@ -44,22 +44,25 @@
     height: auto;
     width: 100%;
     align-items: flex-start !important;
-    label { font-size: 2.75vmin; color: $txt2; }
-    input[type=text] {
+    .c_form{
         width: 100%;
-        padding: 1.5vmin;
-        color: $txt3;
-        border: $outline;
-        background: $bg5;
-        border-radius: $g-bordrad;
-        font-size: 1.75vmin;
-        transition: $g-trans;
-        margin-bottom: 2.5vmin;
-        &:hover { transform: translateY(-.5vmin); }
-        &:focus {
-            outline: none;
-            background: $txt1;
-            color: $bg1;
+        label { font-size: 2.75vmin; color: $txt2; }
+        input[type=text] {
+            width: 100%;
+            padding: 1.5vmin;
+            color: $txt3;
+            border: $outline;
+            background: $bg5;
+            border-radius: $g-bordrad;
+            font-size: 1.75vmin;
+            transition: $g-trans;
+            margin-bottom: 2.5vmin;
+            &:hover { transform: translateY(-.5vmin); }
+            &:focus {
+                outline: none;
+                background: $txt1;
+                color: $bg1;
+            }
         }
     }
 }
