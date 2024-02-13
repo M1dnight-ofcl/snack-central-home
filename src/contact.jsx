@@ -26,17 +26,13 @@ const ContactUs=()=>{
         if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "")
             console.log(`localhost detected\nDebug stats:\nname: "${cf_dat.name}"\nemail: "${cf_dat.email}"\nmsg: "${cf_dat.msg}"`);
         // else alert('Coming Soon! (sorry)');
-        emailjs.sendForm(
-            'snaclcentralemailjs', 
-            'contactus_sent', 
+        emailjs.sendForm('snaclcentralemailjs', 'contactus_sent', 
             form.current, {publicKey: 'i59EM-dm7QDrNOM0z',})
         .then(
             () => { console.log('SUCCESS!'); },
             (error) => { console.log('FAILED...', error.text); },
         );
-        emailjs.sendForm(
-            'snaclcentralemailjs', 
-            'contactus_toadmin', 
+        emailjs.sendForm('snaclcentralemailjs', 'contactus_toadmin', 
             form.current, {publicKey: 'i59EM-dm7QDrNOM0z',})
         .then(
             () => { console.log('SUCCESS!'); },
