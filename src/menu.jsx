@@ -1,13 +1,10 @@
 import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
-const getPrice=(id)=>{
+const getPrice=async(id)=>{
     var results;
-    function Callback(text) {
-        results=text
-    }
-    fetch('/data/pricing_latest.csv')
-    .then((response) => response.text().then(Callback));
+    await fetch('/data/pricing_latest.csv')
+    .then((response) => response.text().then(text=>results=text));
     return results;
 }
 
