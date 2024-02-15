@@ -4,9 +4,9 @@ import "./style/menu.css"
 //var csv is the CSV file with headers
 const getPrice=(id)=>{return fetch("/data/pricing_latest.csv")
 .then(res=>res.text())
-.then(text=>csvJSON(text)[id].Price);};
+.then(text=>(csvJSON(text))[id].Price);};
 
-alert(getPrice('ex_wtml').then(value=>value))
+alert(getPrice('ex_wtml'))
 
 function csvJSON(csv){
     var lines=csv.split("\n");
