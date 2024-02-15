@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
-function getPrice(id) {
+const getPrice=(id)=>{
     var results;
-    fetch('/data/pricing_latest.csv').then(function(response) {response.text().then(function(text) {results=text;});});
-    return results
+    var Callback=(text)=>{
+        results=csvJSON(text)[id]
+    }
+    fetch('/data/pricing_latest.csv')
+    .then((response) => response.text().then(Callback));
+    return results;
 }
 
-alert(getPrice('ex_wtml'))
+function yourCallback( retrievedText ) { /* . . . */ }
 
 function csvJSON(csv){
     var lines=csv.split("\n");
