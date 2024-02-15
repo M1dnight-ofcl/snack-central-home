@@ -3,8 +3,8 @@ import "./style/menu.css"
 
 //var csv is the CSV file with headers
 let csvData = async () => {
-    let res=await fetch("/data/pricing_latest.csv").then((results)=>results.text());
-    return csvJSON(res);
+    let res = await fetch("/data/pricing_latest.csv");
+    return csvJSON(res.text());
 };
 
 alert(csvData())
