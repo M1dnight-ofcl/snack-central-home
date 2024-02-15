@@ -2,8 +2,8 @@ import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
 //var csv is the CSV file with headers
-let csvData = () => {
-    fetch("/data/pricing_latest.csv")
+let csvData = async () => {
+    await fetch("/data/pricing_latest.csv")
     .then((res) => res.text())
     .then((text) => { return csvJSON(text) })
     .catch((e) => console.error(e));
