@@ -11,6 +11,7 @@ const getPrice=(id)=>{
     return results;
 }
 
+alert(getPrice('ex_wtml'))
 
 function csvJSON(csv){
     var lines=csv.split("\n");
