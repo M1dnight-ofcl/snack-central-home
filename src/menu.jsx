@@ -3,8 +3,8 @@ import "./style/menu.css"
 
 const getPrice=(id)=>{
     var results;
-    var Callback=(text)=>{
-        results=csvJSON(text)[id]
+    function Callback(text) {
+        results=text
     }
     fetch('/data/pricing_latest.csv')
     .then((response) => response.text().then(Callback));
