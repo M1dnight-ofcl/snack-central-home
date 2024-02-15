@@ -2,8 +2,7 @@ import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
 alert(fetch("/data/pricing_latest.csv")
-.then(res=>res.text())
-.then(text=>csvJSON(text)['ex_wtml']["Price"]));
+.then(res=>res.text()))
 
 function csvJSON(csv){
     var lines=csv.split("\n");
