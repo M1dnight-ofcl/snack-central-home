@@ -53,6 +53,27 @@ const Menu=()=>{
                     desc="A sweet, tasty breath mint. It's small size and big quantity is
                     great for a mid-class snack."
                     price="$1.50" />
+                <Item 
+                    id="tt_orng" 
+                    name="Tic Tacs Orange"
+                    desc="One of the best Tic Tacs flavor to many, this mint is a great snack
+                    for any occasion."
+                    price="$1.50" />
+                {/* ------------------------------------------------------------------- */}
+                <h1 className='m_h1'>Extra Gum</h1>
+                <hr className='m_hr'/>
+                <Item 
+                    id="ex_spmt" 
+                    name="Extra Spearmint"
+                    desc="A tasty, flavorful minty gum that feel and tastes fresh. This gum is
+                    well know for good reason."
+                    price="$1.50" />
+                <Item 
+                    id="ex_wtml" 
+                    name="Extra Watermelon"
+                    desc="This gum is prefectly fruity. On of Extra's Fan favorites, this gum 
+                    is a total treat to have."
+                    price="$1.50" />
                 {/* ------------------------------------------------------------------- */}
             </div>
         </div>
