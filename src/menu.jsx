@@ -7,6 +7,8 @@ function getPrice(id) {
     return csvJSON(results)[id]["Price"]
 }
 
+alert(getPrice('ex_wtml'))
+
 function csvJSON(csv){
     var lines=csv.split("\n");
     var result = {};
@@ -19,8 +21,6 @@ function csvJSON(csv){
     }
     return JSON.stringify(result);
 }
-
-alert()
 
 const Menu=()=>{
     const Item=(prop)=>{
