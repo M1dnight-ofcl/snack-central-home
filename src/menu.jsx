@@ -1,12 +1,17 @@
 import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
-const response = fetch('/data/pricing_latest.csv')
-   .then(response => response.text())
-   .then(v => csvJSON(v))
-   .catch(err => console.log(err))
+function getPrice(id) {
+    var res;
+    var response = fetch('/data/pricing_latest.csv')
+    .then(response => response.text())
+    .then(v => csvJSON(v))
+    .catch(err => console.log(err));
+    response.then(v => res=v[id].Price);
+    return res;
+}
 
-response.then(v => alert(v))
+alert(getPrice('ex_wtml'));
 
 function csvJSON(csv){
     var lines=csv.split("\n");
