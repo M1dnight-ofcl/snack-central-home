@@ -10,6 +10,8 @@ import { Link } from 'preact-router/match';
 import { h } from 'preact';
 import './style/index.css';
 
+console.clear();
+
 const Home=()=>{
     const [status, setPageStatus] = useState("Home");
     useEffect(()=>{ document.title=`Snack Central - ${status}`; });
