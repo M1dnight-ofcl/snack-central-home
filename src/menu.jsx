@@ -2,7 +2,7 @@ import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
 const getPrice=async(id)=>{
-    var res = await (await fetch("/data/pricing_latest.csv")).text();
+    var res = await fetch("/data/pricing_latest.csv").text();
     return csvJSON(res)[id]["Price"];
 };
 
