@@ -6,9 +6,9 @@ const getData=()=>{return fetch("/data/pricing_latest.csv")
 .then(res=>res.text())
 .then(text=>csvJSON(text));}
 const getPrice=(id)=>{
-    return getData().then(value=>(value[id].Price)).value;
+    return getData().then(value=>(value[id].Price));
 }
-alert(getPrice('5_wtml'))
+alert(getPrice('5_wtml').then(value=>value))
 
 function csvJSON(csv){
     var lines=csv.split("\n");
