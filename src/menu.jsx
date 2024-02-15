@@ -75,6 +75,24 @@ const Menu=()=>{
                     is a total treat to have."
                     price="$1.50" />
                 {/* ------------------------------------------------------------------- */}
+                <h1 className='m_h1'>5 Gum</h1>
+                <hr className='m_hr'/>
+                <Item 
+                    id="5_wtml" 
+                    name="5 Gum Watermelon"
+                    desc="A premium experience above the rest. 5 Gum is a truly perfect gum. It's
+                    amazing in every way."
+                    price="$1.75" />
+                {/* ------------------------------------------------------------------- */}
+                <h1 className='m_h1'>Mentos</h1>
+                <hr className='m_hr'/>
+                <Item 
+                    id="mt_fruit" 
+                    name="Mentos Fruit"
+                    desc="A fruity, tasty flavor. It's small, easy to eat in class, and full of 
+                    flavor."
+                    price="$1.50" />
+                {/* ------------------------------------------------------------------- */}
             </div>
         </div>
     </>)
