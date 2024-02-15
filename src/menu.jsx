@@ -4,7 +4,8 @@ import "./style/menu.css"
 const getPrice=async(id)=>{
     var results;
     await fetch('/data/pricing_latest.csv')
-    .then((response) => response.text().then(text=>results=text));
+    .then((response) => response.text().then(text=>results=text))
+    .catch(e=>alert(e));
     return results;
 }
 
