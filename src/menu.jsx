@@ -6,7 +6,7 @@ const getData=()=>{return fetch("/data/pricing_latest.csv")
 .then(res=>res.text())
 .then(text=>csvJSON(text));}
 const getPrice=(id)=>{
-    return getData().then(value=>(value[id].Price));
+    return getData().then(value=>(value[id].Price)).value;
 }
 alert(getPrice('5_wtml'))
 
