@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
-function getPrice(id) {
+async function getPrice(id) {
     return await fetch('/data/pricing_latest.csv')
     .then(response => response.text())
     .then(v => csvJSON(v))
