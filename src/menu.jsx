@@ -1,6 +1,29 @@
 import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
+//var csv is the CSV file with headers
+let file = fetch("/data/pricing_latest.csv")
+.then((res) => res.text())
+.then((text) => {alert(csvJSON(text))})
+.catch((e) => alert(e));
+
+function csvJSON(csv){
+    var lines=csv.split("\n");
+    var result = {};
+    var headers=lines[0].split(",");
+    for(var i=1;i<lines.length;i++){
+        var obj = {};
+        var currentline=lines[i].split(",");
+        for(var j=0;j<headers.length;j++){
+            obj[headers[j]] = currentline[j];
+        }
+        result[obj[headers[1]]]=obj;
+    }
+    return JSON.stringify(result);
+}
+
+alert()
+
 const Menu=()=>{
     const Item=(prop)=>{
         return(
