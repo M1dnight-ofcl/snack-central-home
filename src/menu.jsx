@@ -4,7 +4,6 @@ import "./style/menu.css"
 function getPrice(id) {
     return fetch('/data/pricing_latest.csv')
     .then(response => response.text())
-    .then(v => v)
     .catch(err => console.log(err));
 }
 
