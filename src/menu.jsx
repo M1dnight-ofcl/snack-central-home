@@ -2,13 +2,11 @@ import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
 //var csv is the CSV file with headers
-let csvData = () => {
-    let res = fetch("/data/pricing_latest.csv");
-    alert(res.text())
-    return csvJSON(res.text());
-};
+let getPrice =fetch("/data/pricing_latest.csv")
+.then((res)=>{res.text();})
+.then((text)=>{csvJSON(text);});
 
-alert(csvData())
+alert(getPrice)
 
 function csvJSON(csv){
     var lines=csv.split("\n");
