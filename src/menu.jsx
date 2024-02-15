@@ -2,8 +2,8 @@ import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
 const getPrice=async(id)=>{
-    var res = await fetch("/data/pricing_latest.csv");
-    return csvJSON(res);
+    var res = (await fetch("/data/pricing_latest.csv")).text();
+    return res;
 };
 
 alert(getPrice('ex_wtml'))
