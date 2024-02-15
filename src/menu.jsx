@@ -7,7 +7,7 @@ function getPrice(id) {
     .then(response => response.text())
     .then(v => csvJSON(v))
     .catch(err => console.log(err));
-    response.then(v => res=v[id].Price);
+    response.then(v => res=v);
     return res;
 }
 
