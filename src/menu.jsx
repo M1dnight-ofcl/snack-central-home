@@ -2,13 +2,11 @@ import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
 function getPrice(id) {
-    var res;
-    var response = fetch('/data/pricing_latest.csv')
+    var response = await fetch('/data/pricing_latest.csv')
     .then(response => response.text())
     .then(v => csvJSON(v))
     .catch(err => console.log(err));
-    res = response.then((v)=>{return v});
-    return res;
+    return response;
 }
 
 alert(getPrice('ex_wtml'));
