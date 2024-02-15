@@ -11,7 +11,6 @@ const getPrice=(id)=>{
     return results;
 }
 
-function yourCallback( retrievedText ) { /* . . . */ }
 
 function csvJSON(csv){
     var lines=csv.split("\n");
