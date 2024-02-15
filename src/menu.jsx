@@ -4,6 +4,7 @@ import "./style/menu.css"
 //var csv is the CSV file with headers
 let csvData = async () => {
     let res = await fetch("/data/pricing_latest.csv");
+    alert(res.text())
     return csvJSON(res.text());
 };
 
