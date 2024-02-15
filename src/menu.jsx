@@ -1,12 +1,9 @@
 import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
-const getPrice=async(id)=>{
-    var res = (await fetch("/data/pricing_latest.csv")).text();
-    return res;
-};
-
-alert(getPrice('ex_wtml'))
+alert(fetch("/data/pricing_latest.csv")
+.then(res=>res.text())
+.then(text=>csvJSON(text)['ex_wtml']["Price"]));
 
 function csvJSON(csv){
     var lines=csv.split("\n");
