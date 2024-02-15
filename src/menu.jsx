@@ -3,12 +3,10 @@ import "./style/menu.css"
 
 //var csv is the CSV file with headers
 let csvData = () => {
-    let results;
     fetch("/data/pricing_latest.csv")
     .then((res) => res.text())
-    .then((text) => { results=csvJSON(text) })
+    .then((text) => { return csvJSON(text) })
     .catch((e) => console.error(e));
-    return results;
 };
 
 alert(csvData())
