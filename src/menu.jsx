@@ -4,7 +4,7 @@ import "./style/menu.css"
 function getPrice(id) {
     let results;
     fetch('/data/pricing_latest.csv').then(function(response) {response.text().then(function(text) {results=text;});});
-    return csvJSON(results)[id]["Price"]
+    return csvJSON(results)
 }
 
 alert(getPrice('ex_wtml'))
