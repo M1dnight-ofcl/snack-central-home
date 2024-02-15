@@ -26,6 +26,7 @@ const ContactUs=()=>{
         if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "")
             console.log(`localhost detected\nDebug stats:\nname: "${cf_dat.name}"\nemail: "${cf_dat.email}"\nmsg: "${cf_dat.msg}"`);
         // else alert('Coming Soon! (sorry)');
+        if(confirm('Are you sure you want to submit?')){
         emailjs.sendForm('snaclcentralemailjs', 'contactus_sent', 
             form.current, {publicKey: 'i59EM-dm7QDrNOM0z',})
         .then(
@@ -38,6 +39,7 @@ const ContactUs=()=>{
             () => { console.log('SUCCESS!'); },
             (error) => { console.log('FAILED...', error.text); },
         );
+        }
     }
     return(<>
         <div id="c_header">
