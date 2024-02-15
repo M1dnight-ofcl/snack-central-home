@@ -2,7 +2,7 @@ import { useState, useEffect } from 'preact/hooks'
 import "./style/menu.css"
 
 function getPrice(id) {
-    let results;
+    var results;
     fetch('/data/pricing_latest.csv').then(function(response) {response.text().then(function(text) {results=text;});});
     return results
 }
