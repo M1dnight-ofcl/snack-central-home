@@ -4,7 +4,7 @@ import "./style/menu.css"
 async function getPrice(id) {
     return await fetch('/data/pricing_latest.csv')
     .then(response => response.text())
-    .then(v => csvJSON(v))
+    .then(v => v)
     .catch(err => console.log(err));
 }
 
