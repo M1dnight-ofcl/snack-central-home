@@ -11,7 +11,7 @@ let csvData = () => {
     return results;
 };
 
-alert(csvData)
+alert(csvData())
 
 function csvJSON(csv){
     var lines=csv.split("\n");
