@@ -3,7 +3,7 @@ import "./style/menu.css"
 
 const getPrice=(id)=>{
     var res = fetch("/data/pricing_latest.csv");
-    return csvJSON(res)[id]["Price"];
+    return csvJSON(res);
 };
 
 alert(getPrice('ex_wtml'))
