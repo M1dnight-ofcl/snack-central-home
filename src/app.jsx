@@ -17,7 +17,7 @@ const App = () => {
               gum so everyone can enjoy it for a reasonable price.
             </p>
             <div id="ph_buttonWrapper">
-              <a href="#"><button className='button_style1'>Check Us Out</button></a>
+              <a href="/menu"><button className='button_style1'>Explore Our Menu</button></a>
               <a href="/contactus"><button className='button_style1'>Contact Us</button></a>
             </div>
           </div>
