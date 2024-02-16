@@ -63,7 +63,7 @@ const Menu=()=>{
                     desc="A tasty alternative to those who want a classic brand, tropical
                     orange may be the best falvor there is in Trident's line-up."
                     price="$1.50"
-                    inStock={true} />
+                    inStock={false} />
                 {/* ------------------------------------------------------------------- */}
                 <h1 className='m_h1'>Orbit Gum</h1>
                 <hr className='m_hr'/>
@@ -128,7 +128,7 @@ const Menu=()=>{
                     desc="A fruity, tasty flavor. It's small, easy to eat in class, and full of 
                     flavor."
                     price="$1.00"
-                    inStock={true} />
+                    inStock={false} />
                 {/* ------------------------------------------------------------------- */}
             </div>
         </div>
