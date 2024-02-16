@@ -35,7 +35,7 @@ const Menu=()=>{
                 <div className='leftWrapper'>
                     <h1>{prop.name}</h1>
                     <p>{prop.desc}</p>
-                    <h2>{prop.price}</h2>
+                    <h2>{prop.price}{prop.inStock ? null : <span>Out Of Stock</span>}</h2>
                 </div>
                 <div className='image' style={`background-image: url("/menu_img_assets/${prop.id}.png") !important;`}></div>
             </div>
@@ -55,13 +55,15 @@ const Menu=()=>{
                     name="Trident Bubblegum"
                     desc="The classic flavor of Trident. Recognizable by all, this
                     gum is a go-to classic for anyone who wants some good gum."
-                    price="$1.75"/>
+                    price="$1.75"
+                    inStock={true} />
                 <Item 
                     id="td_trpo" 
                     name="Trident Tropical Orange"
                     desc="A tasty alternative to those who want a classic brand, tropical
                     orange may be the best falvor there is in Trident's line-up."
-                    price="$1.50"/>
+                    price="$1.50"
+                    inStock={true} />
                 {/* ------------------------------------------------------------------- */}
                 <h1 className='m_h1'>Orbit Gum</h1>
                 <hr className='m_hr'/>
@@ -70,22 +72,26 @@ const Menu=()=>{
                     name="Orbit Spearmint"
                     desc="A sharp minty flavor for ultimate refreshment. This is a pretty
                     reasonable flavor of gum."
-                    price="$1.50"/>
+                    price="$1.50"
+                    inStock={true} />
                 {/* ------------------------------------------------------------------- */}
                 <h1 className='m_h1'>Tic Tacs</h1>
-                <hr className='m_hr'/>
+                <hr className='m_hr'
+                    inStock={true} />
                 <Item 
                     id="tt_fruit" 
                     name="Tic Tacs Fruit"
                     desc="A sweet, tasty breath mint. It's small size and big quantity is
                     great for a mid-class snack."
-                    price="$1.50"/>
+                    price="$1.50"
+                    inStock={false} />
                 <Item 
                     id="tt_orng" 
                     name="Tic Tacs Orange"
                     desc="One of the best Tic Tacs flavor to many, this mint is a great snack
                     for any occasion."
-                    price="$1.75"/>
+                    price="$1.75"
+                    inStock={false} />
                 {/* ------------------------------------------------------------------- */}
                 <h1 className='m_h1'>Extra Gum</h1>
                 <hr className='m_hr'/>
@@ -94,13 +100,15 @@ const Menu=()=>{
                     name="Extra Spearmint"
                     desc="A tasty, flavorful minty gum that feel and tastes fresh. This gum is
                     well know for good reason."
-                    price="$1.50"/>
+                    price="$1.50"
+                    inStock={true} />
                 <Item 
                     id="ex_wtml" 
                     name="Extra Watermelon"
                     desc="This gum is prefectly fruity. On of Extra's Fan favorites, this gum 
                     is a total treat to have."
-                    price="$1.75"/>
+                    price="$1.75"
+                    inStock={true} />
                 {/* ------------------------------------------------------------------- */}
                 <h1 className='m_h1'>5 Gum</h1>
                 <hr className='m_hr'/>
@@ -109,7 +117,8 @@ const Menu=()=>{
                     name="5 Gum Watermelon"
                     desc="A premium experience above the rest. 5 Gum is a truly perfect gum. It's
                     amazing in every way."
-                    price="$2.50"/>
+                    price="$2.50"
+                    inStock={true} />
                 {/* ------------------------------------------------------------------- */}
                 <h1 className='m_h1'>Mentos</h1>
                 <hr className='m_hr'/>
@@ -118,7 +127,8 @@ const Menu=()=>{
                     name="Mentos Fruit"
                     desc="A fruity, tasty flavor. It's small, easy to eat in class, and full of 
                     flavor."
-                    price="$1.00"/>
+                    price="$1.00"
+                    inStock={true} />
                 {/* ------------------------------------------------------------------- */}
             </div>
         </div>
