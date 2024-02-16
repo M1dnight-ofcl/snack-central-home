@@ -44,6 +44,8 @@
             background-size: contain;
             object-fit: contain;
             background-position: center;
+            background: $bg1;
+            border-radius: $g-bordrad;
         }
     }
 }
