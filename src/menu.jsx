@@ -4,7 +4,7 @@ import "./style/menu.css"
 
 // const getLatestPriceChart=()=>{
 //     function csvJSON(csv){
-//         var lines=csv.split("\n");
+//         var lines=csv.split("\n");dsdwdsdwdsdw
 //         var result = {};
 //         var headers=lines[0].split(",");
 //         for(var i=1;i<lines.length;i++){
@@ -18,7 +18,7 @@ import "./style/menu.css"
 //     return csvJSON(ajax({
 //         type: "GET",
 //         url: '/data/pricing_latest.csv',
-//         async: false,
+//         async: false,ds
 //         error: () => {currentstatus=false}
 //     }).responseText)
 // }
@@ -35,7 +35,7 @@ const Menu=()=>{
                 <div className='leftWrapper'>
                     <h1>{prop.name}</h1>
                     <p>{prop.desc}</p>
-                    <h2>{prop.price}{prop.inStock ? null : <span>Out Of Stock</span>}</h2>
+                    <h2>{prop.price} {prop.inStock ? null : <span>Out Of Stock</span>}</h2>
                 </div>
                 <div className='image' style={`background-image: url("/menu_img_assets/${prop.id}.png") !important;`}></div>
             </div>

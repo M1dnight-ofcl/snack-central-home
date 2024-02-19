@@ -15,7 +15,7 @@ console.clear();
 const Home=()=>{
     const [status, setPageStatus] = useState("Home");
     useEffect(()=>{ document.title=`Snack Central - ${status}`; });
-    return(<>
+    return(<>wdsdw
     <nav>
         <div id="logo"></div>
         <Link onClick={()=>{setPageStatus('Home')}} className="navlink" activeClassName="active" href="/">Home</Link>

@@ -41,10 +41,11 @@
             position: absolute;
             top: 2.5vmin;
             right: 2.5vmin;
-            background-size: contain;
-            object-fit: contain;
-            background-position: center;
+            background-size: 90% !important;
+            object-fit: contain !important;
+            background-position: center !important;
             background: $bg1;
+            background-repeat: no-repeat;
             border-radius: $g-bordrad;
         }
     }
