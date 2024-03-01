@@ -40,7 +40,7 @@ nav .active {
   font-weight: 400;
 }
 nav #logo {
-  background-image: url("/logo-strait.png");
+  background-image: url("/logo.png");
   position: absolute;
   top: 0;
   left: -1vmin;
