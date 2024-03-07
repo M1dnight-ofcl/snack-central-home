@@ -35,7 +35,8 @@ nav{
   align-items: center !important;
   justify-content: flex-end !important;
   text-decoration: none !important;
-  background: $bg1;
+  background: #19191975;
+  backdrop-filter: blur(1vmin);
   z-index: 99;
   .navlink {
     text-decoration: none !important;
@@ -67,6 +68,7 @@ nav{
     left: -1vmin;
     height: 100%;
     width: 20vmin;
+    z-index: 99999;
     cursor: pointer;
     object-fit: contain;
     background-size: contain;

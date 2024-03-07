@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'preact/hooks';
 // import logo from '/logo.png';
 // import Aos from "aos";
+
 import './style/app.css';
 const App = () => {
   // useEffect(()=>{ Aos.init() },[])
@@ -26,8 +27,8 @@ const App = () => {
           </div>
         </div>
       </header>
-      <div className="sect_style1" id="1">
-        <div className="sect_contentWrapper">
+      <div className="sect_style1" id="s1">
+        <div className="sect_contentWrapper" id="s1cw">
           <div className="left" id="sect1_left">
             <div className="sect1_contentbox">
               <h1 className="sect_h1">Our Mission</h1>
@@ -50,6 +51,9 @@ const App = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="sect_style1" id="s2">
+
       </div>
     </>
   )

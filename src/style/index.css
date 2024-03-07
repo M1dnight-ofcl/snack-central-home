@@ -13,7 +13,8 @@ nav {
   align-items: center !important;
   justify-content: flex-end !important;
   text-decoration: none !important;
-  background: #191919;
+  background: rgba(25, 25, 25, 0.4588235294);
+  backdrop-filter: blur(1vmin);
   z-index: 99;
 }
 nav .navlink {
@@ -46,6 +47,7 @@ nav #logo {
   left: -1vmin;
   height: 100%;
   width: 20vmin;
+  z-index: 99999;
   cursor: pointer;
   object-fit: contain;
   background-size: contain;

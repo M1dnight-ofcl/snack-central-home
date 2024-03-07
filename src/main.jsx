@@ -19,7 +19,7 @@ const Home=()=>{
     <nav>
         <div id="logo"></div>
         <Link onClick={()=>{setPageStatus('Home')}} className="navlink" activeClassName="active" href="/">Home</Link>
-        <Link onClick={()=>{setPageStatus('Contact Us')}} className="navlink" activeClassName="active" href="/contactus">Contact Us</Link>
+        {/* <Link onClick={()=>{setPageStatus('Contact Us')}} className="navlink" activeClassName="active" href="/contactus">Contact Us</Link> */}
         <Link onClick={()=>{setPageStatus('Menu')}} className="navlink" activeClassName="active" href="/menu">Menu</Link>
     </nav>
     <Router>
